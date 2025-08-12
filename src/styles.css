@@ -1,0 +1,33 @@
+:root{
+  --rich-black: #071013ff;
+  --indian-red: #eb5160ff;
+  --rosy-brown: #b7999cff;
+  --silver: #aaaaaaff;
+  --platinum: #dfe0e2ff;
+}
+
+* { box-sizing: border-box; }
+html,body,#root { height:100%; margin:0; }
+
+body {
+  background: var(--rich-black);
+  color: var(--platinum);
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+.app-shell { min-height:100vh; display:flex; flex-direction: column; }
+
+.topbar { display:flex; align-items:center; justify-content:space-between; padding: 12px 16px; border-bottom: 1px solid rgba(255,255,255,0.03); }
+
+.burger { background: transparent; border: none; color: var(--platinum); font-size: 20px; cursor: pointer; }
+
+.brand { color: var(--platinum); font-weight: 600; font-size: 18px; }
+
+.btn { background: var(--indian-red); color: var(--platinum); border: none; padding: 10px 14px; border-radius: 8px; cursor: pointer; }
+
+.center { display:flex; flex-direction:column; align-items: center; justify-content: center; padding: 32px; text-align:center; }
+
+.input, textarea { background: #0b0f11; color: var(--platinum); border: 1px solid rgba(255,255,255,0.03); padding: 8px; border-radius:6px; margin:6px 0; width: 100%; }
+
+.menu-panel { position: fixed; left: 12px; top: 56px; background: rgba(7,16,19,0.95); border: 1px solid rgba(255,255,255,0.03); padding: 12px; border-radius:8px; }
+.menu-panel button { display:block; width:100%; margin:6px 0; text-align:left; background:none; color:var(--platinum); }
